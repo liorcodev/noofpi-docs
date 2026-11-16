@@ -19,6 +19,14 @@
           Deployment
         </NuxtLink>
         <a
+          href="https://liorcodev.github.io/noofpi-ui-docs/"
+          target="_blank"
+          rel="noopener"
+          class="hover:text-ink transition-colors"
+        >
+          noofpi-ui
+        </a>
+        <a
           href="https://github.com/liorcodev/noofpi"
           target="_blank"
           rel="noopener"

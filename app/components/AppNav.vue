@@ -22,6 +22,7 @@ watch(
 );
 
 const doofpiDocsUrl = 'https://liorcodev.github.io/doofpi-docs';
+const uiDocsUrl = 'https://liorcodev.github.io/noofpi-ui-docs/';
 
 const links = [
   { label: 'Docs', to: '/docs/introduction' },
@@ -263,14 +264,26 @@ onMounted(() => {
 
       <div class="flex items-center gap-2">
         <a
+          :href="uiDocsUrl"
+          target="_blank"
+          rel="noopener"
+          aria-label="noofpi-ui"
+          title="noofpi-ui"
+          class="inline-flex items-center gap-2 p-1 lg:pl-1.5 lg:pr-3 rounded-full text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 hover:border-emerald-400 hover:bg-emerald-100 transition-colors"
+        >
+          <img src="/noofpi-ui-logo.svg" class="w-5 h-5" alt="" />
+          <span class="hidden lg:inline">noofpi-ui</span>
+        </a>
+        <a
           :href="doofpiDocsUrl"
           target="_blank"
           rel="noopener"
-          class="hidden lg:inline-flex items-center gap-2 pl-1.5 pr-3 py-1 rounded-full text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-200 hover:border-blue-400 hover:bg-blue-100 transition-colors"
+          aria-label="Built on doofpi"
+          title="Built on doofpi"
+          class="inline-flex items-center gap-2 p-1 lg:pl-1.5 lg:pr-3 rounded-full text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-200 hover:border-blue-400 hover:bg-blue-100 transition-colors"
         >
           <img src="/doofpi-logo.svg" class="w-5 h-5" alt="" />
-          Built on doofpi
-          <Icon name="heroicons:arrow-top-right-on-square" class="text-[11px] opacity-70" />
+          <span class="hidden lg:inline">Built on doofpi</span>
         </a>
         <button
           class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs text-muted hover:text-ink border border-line-strong hover:border-brand-400 bg-surface hover:bg-accent-soft transition-all duration-200 w-44"
@@ -343,6 +356,15 @@ onMounted(() => {
           {{ link.label }}
         </NuxtLink>
         <a
+          :href="uiDocsUrl"
+          target="_blank"
+          rel="noopener"
+          class="mt-1 mx-4 px-3 py-2.5 rounded-xl text-sm font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 inline-flex items-center gap-2"
+        >
+          <img src="/noofpi-ui-logo.svg" class="w-5 h-5" alt="" />
+          noofpi-ui
+        </a>
+        <a
           :href="doofpiDocsUrl"
           target="_blank"
           rel="noopener"
@@ -350,7 +372,6 @@ onMounted(() => {
         >
           <img src="/doofpi-logo.svg" class="w-5 h-5" alt="" />
           Built on doofpi
-          <Icon name="heroicons:arrow-top-right-on-square" class="text-xs opacity-70" />
         </a>
       </nav>
     </div>

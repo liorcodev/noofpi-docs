@@ -1,10 +1,12 @@
 # noofpi-docs
 
-Documentation site for [noofpi](https://www.npmjs.com/package/noofpi), a minimal Vue + Vite full-stack framework built around [doofpi](https://www.npmjs.com/package/doofpi).
+Documentation site for [noofpi](https://www.npmjs.com/package/noofpi), a minimal Vue + Vite
+full-stack framework built around [doofpi](https://www.npmjs.com/package/doofpi).
 
 Live site: https://liorcodev.github.io/noofpi-docs/
 
-Built with [Nuxt](https://nuxt.com) and [Nuxt Content](https://content.nuxt.com), and deployed to GitHub Pages.
+Built with [Nuxt](https://nuxt.com) and [Nuxt Content](https://content.nuxt.com), and deployed to
+GitHub Pages.
 
 ## Development
 
@@ -32,7 +34,8 @@ bun run format     Format with Prettier
 
 ## Deployment
 
-Pushing to `main` runs `.github/workflows/deploy.yml`, which generates the site and publishes it to GitHub Pages.
+Pushing to `main` runs `.github/workflows/deploy.yml`, which generates the site and publishes it to
+GitHub Pages.
 
 ## Related
 
