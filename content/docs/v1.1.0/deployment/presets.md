@@ -35,7 +35,8 @@ The Dockerfile installs the project's dependencies, so keep them (and a lock fil
 
 The Cloudflare presets bundle all dependencies into the Worker and set the `nodejs_compat` flag.
 Bindings reach your doofpi server as `env` (`doofpi.fetch(request, env)`) and server middleware as
-`env`. To add them, copy the generated `wrangler.json` into your own wrangler config.
+`env`. To add them, copy the generated `wrangler.json` into your own wrangler config. To type
+`env`, see [Server env and context](/docs/doofpi/typed-routes#server-env-and-context).
 
 `noofpi dev` emulates the bindings locally (vars, KV, D1, R2, ...) with Wrangler's
 `getPlatformProxy`. It reads `wrangler.json`, `wrangler.jsonc` or `wrangler.toml` from the project
